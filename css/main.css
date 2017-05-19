@@ -55,7 +55,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* {border: 1px solid black;}
+* {border: 1px solid black;}
 /***********Menu responsive*************/
 .navbar {
   background-color: rgb(245, 107, 42);
@@ -116,9 +116,8 @@ path:hover{
   fill: rgb(245, 107, 42);
 }
 
-aside {
-  display: none;
-}
+
+
 
 
 
@@ -146,14 +145,13 @@ aside {
     display: none;
   }
 
-  aside {
-    display: none;
-  }
 
   #region img {
     width: 746px;
     height: 273px;
   }
+
+
 
 
 
@@ -188,6 +186,23 @@ aside {
     color: rgb(245, 107, 42);
     text-decoration: none;
   }
+
+  #foothaut li {
+    list-style: none;
+  }
+
+  #foothaut a {
+    color: rgb(51, 102, 153);
+    text-decoration: none;
+}
+
+#foothaut a:hover {
+  text-decoration: underline;
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
