@@ -55,10 +55,41 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+* {border: 1px solid black;}
+.navbar {
+  background-color: rgb(245, 107, 42);
+}
 
+#menu ul {
+  width: 65%;
+}
 
+#menu img {
+  width: 140px;
+  height: 40px;
+  margin-left: 90px;
+}
 
+#menu a {
+  color: white;
+  border: none;
+  font-size: 15px;
+}
 
+#menu a:hover {
+  text-decoration: underline;
+}
+
+#menu button {
+  border: none;
+  color: white;
+  background-color: rgb(245, 107, 42);
+  margin-right: 90px;
+}
+ #menu button:hover {
+   background-color: white;
+   color:rgb(245, 107, 42);
+ }
 
 
 
