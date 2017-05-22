@@ -60,6 +60,7 @@ textarea {
 /***********GENERALE******************
 **************************************/
 /***********Menu responsive*************/
+* {border: 1px solid black;}
 .navbar {
   background-color: rgb(245, 107, 42);
 }
@@ -102,19 +103,70 @@ textarea {
 }
 
 
-
 /********Header*******/
 
 h1 {
   font-size: 14px;
   font-weight: bold;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 header span {
   color: rgb(245, 107, 42);
 
 }
+
+#region img {
+  width: 338px;
+  height: 123px;
+}
+
+header a {
+  color: white;
+  background-color: rgb(65, 131, 215);
+  padding: 12px 70px 12px 70px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+header button {
+  color: rgb(65, 131, 215);
+  background-color: transparent;
+  font-size:13px;
+  font-weight: bold;
+  padding: 12px 57px 12px 57px;
+  border-radius: 4px;
+  border-color: rgb(65, 131, 215);
+  margin-top: 30px;
+
+}
+
+
+
+/********Carte de France******/
+path {
+  fill: rgb(56, 115, 189);
+}
+path:hover{
+  fill: rgb(245, 107, 42);
+}
+/*********************************/
+h2 {
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+h2 a {
+  color: rgb(51, 102, 153);
+}
+
+/*************Mobile*****************
+*************************************/
+/*************Header***************/
 
 #region {
   display: block;
@@ -124,22 +176,37 @@ header span {
   display: none;
 }
 
+header a {
+  margin: 40px;
+}
+
+header button {
+  margin-left: 40px;
+}
+
+/*********bouton choisir une région*********************/
+
+#region select {
+  background-color: white;
+  padding: 15px 130px 15px 15px;
+  margin:10px;
+  font-weight: bold;
+  border-radius: 4px;
+  border-color: lightgrey;
+}
+
 #region img {
-  width: 338px;
-  height: 123px;
+  margin-left: 10px;
+  margin-top: 15px;
+  border: solid lightgrey 1px;
 }
 
+/*****************Carte de France***********************/
 
-/********Carte de France******/
-path {
-  fill: rgb(51, 102, 153);
+#cartedefrance svg {
+  height: 400px;
+  width: 100%;
 }
-path:hover{
-  fill: rgb(245, 107, 42);
-}
-
-/*************Mobile*****************
-*************************************/
 
 
 /* ==========================================================================
@@ -168,7 +235,27 @@ path:hover{
     left: 40%;
 }
 
+header a {
+  margin: 230px;
+}
 
+header button {
+  margin-left: 230px;
+}
+
+/*****************Bouton choisir une region*********************/
+#region select {
+  width: 98%;
+
+}
+
+/****************Carte de France*****************/
+
+#cartedefrance svg {
+
+  width: 748px;
+  height: 808px;
+}
 }
 
 /*********************Desktop***************
@@ -191,7 +278,7 @@ path:hover{
     border: none;
     margin-right: 110px;
     font-size: 14px;
-    
+
   }
 
 
@@ -204,14 +291,61 @@ path:hover{
   #actualite {
     display: block;
   }
+ h1 {
+   margin-bottom: 50px;
+   margin-left: 90px;
+   text-align: left;
+ }
+header a {
+  margin-left: 90px;
+  padding-left: 98px;
+  padding-right: 98px;
+}
 
+header button {
+  margin-left: 90px;
+  padding-left: 84px;
+  padding-right: 84px;
+}
+
+#actualite {
+  width: 334px;
+  height: 290px;
+  margin-left: 90px;
+  margin-top: 20px;
+
+
+}
+
+header article {
+width: 500px;
+}
+
+header h2 {
+  height: 50px;
+  background-color: rgb(102, 102, 102);
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+}
+
+/**************Carte de France**********************/
+#cartedefrance svg {
+  width: 500px;
+  height: 500px;
+  margin-top: 20px;
+}
+/*********Aside****************/
   aside {
     display: block;
   }
+
+
   aside li {
     list-style: none;
     text-align: right;
   }
+
 
   aside a {
     color:rgb(51, 102, 153);
@@ -221,14 +355,14 @@ path:hover{
     color: rgb(245, 107, 42);
     text-decoration: none;
   }
-
-  #foothaut li {
-    list-style: none;
+/**************Footer********************/
+#foothaut li {
+  list-style: none;
   }
 
-  #foothaut a {
-    color: rgb(51, 102, 153);
-    text-decoration: none;
+#foothaut a {
+  color: rgb(51, 102, 153);
+  text-decoration: none;
 }
 
 #foothaut a:hover {
