@@ -55,44 +55,66 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-* {border: 1px solid black;}
+/* {border: 1px solid black;}
+
+/***********GENERALE******************
+**************************************/
 /***********Menu responsive*************/
 .navbar {
   background-color: rgb(245, 107, 42);
 }
 
-#menu ul {
-  width: 65%;
-}
-
-#menu img {
-  width: 140px;
-  height: 40px;
-  margin-left: 90px;
-}
 
 #menu a {
   color: white;
   border: none;
-  font-size: 15px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 #menu a:hover {
   text-decoration: underline;
 }
 
-#menu button {
+#boutonmenu {
   border: none;
-  color: white;
-  background-color: rgb(245, 107, 42);
+  color:rgb(245, 107, 42) ;
+  background-color: white;
   margin-right: 90px;
+  padding: 13px 10px 13px 10px;
+  font-size: 14px;
+  font-weight: bold;
 }
- #menu button:hover {
-   background-color: white;
-   color:rgb(245, 107, 42);
+
+
+ #menu img {
+   position: absolute;
+   top:10px;
+   left: 30%;
+   width: 140px;
+   height: 40px;
+
  }
 
+
+#menu nav {
+  height: 60px;
+}
+
+
+
 /********Header*******/
+
+h1 {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+header span {
+  color: rgb(245, 107, 42);
+
+}
 
 #region {
   display: block;
@@ -116,25 +138,15 @@ path:hover{
   fill: rgb(245, 107, 42);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*************Mobile*****************
+*************************************/
 
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+/*************Tablette**************
+**************************************/
 @media (min-width:768px) {
 
   #region {
@@ -152,12 +164,35 @@ path:hover{
   }
 
 
-
+  #menu img {
+    left: 40%;
+}
 
 
 }
 
+/*********************Desktop***************
+*******************************************/
 @media (min-width:992px) {
+
+  /*********************Barre de menu****************/
+
+  #menu ul {
+    margin-left: 240px;
+  }
+
+  #menu img {
+    left: 110px;;
+  }
+
+  #seconnecter{
+    background-color: rgb(245, 107, 42) !important;
+    color: white !important;
+    border: none;
+    margin-right: 110px;
+    font-size: 14px;
+    
+  }
 
 
   /********header********/
