@@ -55,16 +55,15 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* {border: 1px solid black;}
+
 
 /***********GENERALE******************
 **************************************/
 /***********Menu responsive*************/
-* {border: 1px solid black;}
+/* {border: 1px solid black;}*/
 .navbar {
   background-color: rgb(245, 107, 42);
 }
-
 
 #menu a {
   color: white;
@@ -87,7 +86,6 @@ textarea {
   font-weight: bold;
 }
 
-
  #menu img {
    position: absolute;
    top:10px;
@@ -97,19 +95,17 @@ textarea {
 
  }
 
-
 #menu nav {
   height: 60px;
 }
 
-
-/********Header*******/
+/****************Header***************/
 
 h1 {
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 80px;
   margin-bottom: 30px;
 }
 
@@ -144,8 +140,6 @@ header button {
 
 }
 
-
-
 /********Carte de France******/
 path {
   fill: rgb(56, 115, 189);
@@ -153,11 +147,11 @@ path {
 path:hover{
   fill: rgb(245, 107, 42);
 }
-/*********************************/
+/**************phrase en dessous de la carte*******************/
 h2 {
   font-size: 14px;
   font-weight: bold;
-
+  margin: 30px 10px 30px 10px;
 }
 
 h2 a {
@@ -166,16 +160,13 @@ h2 a {
 
 /*************Mobile*****************
 *************************************/
-/*************Header***************/
 
-#region {
-  display: block;
-}
+/*************Header***************/
 
 #actualite {
   display: none;
 }
-
+/********************Header****************************/
 header a {
   margin: 40px;
 }
@@ -185,6 +176,9 @@ header button {
 }
 
 /*********bouton choisir une région*********************/
+#region {
+  display: block;
+}
 
 #region select {
   background-color: white;
@@ -208,6 +202,24 @@ header button {
   width: 100%;
 }
 
+/****************Footer**************************/
+
+#footerpetit {
+  background-color: rgb(71, 71, 71);
+  color: white;
+  font-size: 14px;
+  height: 60px;
+}
+
+#footerpetit p {
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+#footerpetit span {
+  visibility: hidden;
+}
+
 
 /* ==========================================================================
    Media Queries
@@ -216,25 +228,17 @@ header button {
 **************************************/
 @media (min-width:768px) {
 
-  #region {
-    display: block;
-  }
+
 
   #actualite {
     display: none;
   }
 
-
-  #region img {
-    width: 746px;
-    height: 273px;
-  }
-
-
+/*************Menu*********************************/
   #menu img {
     left: 40%;
 }
-
+/***************Header**********************************/
 header a {
   margin: 230px;
 }
@@ -243,16 +247,23 @@ header button {
   margin-left: 230px;
 }
 
+#region img {
+  width: 746px;
+  height: 273px;
+}
+
+#region {
+  display: block;
+}
+
 /*****************Bouton choisir une region*********************/
 #region select {
   width: 98%;
-
 }
 
 /****************Carte de France*****************/
 
 #cartedefrance svg {
-
   width: 748px;
   height: 808px;
 }
@@ -262,40 +273,40 @@ header button {
 *******************************************/
 @media (min-width:992px) {
 
-  /*********************Barre de menu****************/
+/*********************Barre de menu****************/
 
-  #menu ul {
-    margin-left: 240px;
-  }
+#menu ul {
+  margin-left: 240px;
+}
 
-  #menu img {
-    left: 110px;;
-  }
+#menu img {
+  left: 90px;;
+}
 
-  #seconnecter{
-    background-color: rgb(245, 107, 42) !important;
-    color: white !important;
-    border: none;
-    margin-right: 110px;
-    font-size: 14px;
+#seconnecter{
+  background-color: rgb(245, 107, 42) !important;
+  color: white !important;
+  border: none;
+  margin-right: 110px;
+  font-size: 14px;
+}
 
-  }
+/*******************header*****************/
 
+#region {
+  display: none;
+}
 
-  /********header********/
+#actualite {
+  display: block;
+}
 
-  #region {
-    display: none;
-  }
+h1 {
+  margin-bottom: 50px;
+  margin-left: 90px;
+  text-align: left;
+}
 
-  #actualite {
-    display: block;
-  }
- h1 {
-   margin-bottom: 50px;
-   margin-left: 90px;
-   text-align: left;
- }
 header a {
   margin-left: 90px;
   padding-left: 98px;
@@ -313,8 +324,6 @@ header button {
   height: 290px;
   margin-left: 90px;
   margin-top: 20px;
-
-
 }
 
 header article {
@@ -333,48 +342,122 @@ header h2 {
 #cartedefrance svg {
   width: 500px;
   height: 500px;
-  margin-top: 20px;
+  margin-top: 80px;
 }
 /*********Aside****************/
   aside {
     display: block;
+    margin-top: 80px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0px !important;
   }
-
 
   aside li {
     list-style: none;
     text-align: right;
   }
 
-
   aside a {
     color:rgb(51, 102, 153);
     text-decoration: none;
+    margin-right: 90px;
   }
   aside a:hover {
     color: rgb(245, 107, 42);
     text-decoration: none;
   }
+
+h2 {
+  margin-left: 90px;
+  margin-right: 90px;
+}
 /**************Footer********************/
 #foothaut li {
   list-style: none;
+  text-align: left;
   }
 
 #foothaut a {
   color: rgb(51, 102, 153);
   text-decoration: none;
+  font-size: 13px;
 }
 
 #foothaut a:hover {
   text-decoration: underline;
 }
 
+#foothaut {
+  background-color:rgb(242, 242, 242);
+  color:rgb(56, 115, 189);
+  flex-wrap: nowrap;
+}
+
+
 .title {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
+#footbas {
+  background-color: #474747;
+  color: white;
+  margin-left: 20px;
+  margin-right: 150px;
+}
 
+#footbas select {
+  color: black;
+  margin-left: 60px;
+  padding:5px 150px 5px 0px;
+}
+
+
+
+footer {
+  background-color: #474747;
+}
+
+#footbas a {
+  color: white;
+  font-size: 13px;
+
+}
+
+#footbas ul {
+  padding-left: 60px;
+
+}
+
+#footbas li {
+  list-style: none;
+  margin-bottom: 20px;
+
+}
+
+#footbas h3 {
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#footerpetit span {
+  visibility: visible;
+}
+
+#footerpetit {
+  margin-left: 50px;
+  margin-right:
+}
+
+#footpetit p {
+  font-size: 13px;
+
+}
+
+}
 
 
 /* ==========================================================================
